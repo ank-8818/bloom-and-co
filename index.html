@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bloom & Co. is an appointment-only spa for hair, skin, massage and nails. Unhurried care, no upselling. Book online in a minute.">
+
+        <title>Bloom &amp; Co.</title>
+
+        <!--Fonts: headings- Playfair Display, body- Jost-->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+
+        <!--CSS stylesheet-->
+        <link href="./styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <!--Navbar-->
+        <nav id="navbar">
+            <a href="#" class="logo">
+                <img src="./images/bloom-and-co-logo-full.svg" alt="Bloom &amp; Co." class="logo-full"/>
+                <img src="./images/bloom-and-co-mark.svg" alt="Bloom &amp; Co." class="logo-mark" />
+            </a>
+
+            <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div id="navigation-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#bundles" class="nav-link">Bundles</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#booking" class="btn-primary">Book Now</a>
+            </div>
+        </nav>
+
+
+        <main>
+            
+            <!--Hero Section-->
+
+            <section id="hero-section">
+                <div id="floral-bg"></div>
+                    <link rel="preload" as="image" href="./images/bloom-and-co-hero-bg.svg" fetchpriority="high">
+                <div id="hero-card">
+                    <h1>Beauty, unhurried.</h1>
+                    <p>We're appointment-only, because we believe every visit deserves our full attention — not a rushed slot between walk-ins.</p>
+                    <a href="#booking" class="btn-primary">Book a Session</a>
+                </div>
+            </section>
+
+
+
+            <!--Philosophy Section-->
+
+            <section id="philosophy-section">
+                <h2 class="sr-only">Our philosophy</h2>
+                <div id="philosophy-grid">
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon">
+                            <img src="./images/icons/icon-1.webp" alt="Hand mirror icon" width="110" height="150" />
+                        </div>
+
+                        <div class="philosophy-text">
+                            <h3>No standard enforced</h3>
+                            <p>We don't work toward a 'better' version of anyone. You leave looking like a well-rested version of yourself — not someone else's idea of beautiful.</p>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon">
+                            <img src="./images/icons/icon-2.webp" alt="Chat icon" width="146" height="150" />
+                        </div>
+
+                        <div class="philosophy-text">
+                            <h3>Nothing pushed on you</h3>
+                            <p>No product lectures, no retail upsell at checkout. If you ask what we used, we'll tell you honestly — that's the whole conversation.</p>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon">
+                            <img src="./images/icons/icon-3.webp" alt="Hourglass icon" width="126" height="150" />
+                        </div>
+
+                        <div class="philosophy-text">
+                            <h3>Never rushed</h3>
+                            <p>One client, one appointment, full attention. We'd rather do fewer sessions well than more sessions quickly.</p>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon">
+                            <img src="./images/icons/icon-4.webp" alt="Sprout icon" width="133" height="150" />
+                        </div>
+
+                        <div class="philosophy-text">
+                            <h3>Healing over instant results</h3>
+                            <p>Real change in skin and hair takes more than one visit. We'll tell you that upfront, not oversell a single session.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </section>
+
+
+            <!--Services-->
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <p class="section-intro">Every treatment is explained in plain language, so you know exactly what to expect.</p>
+
+                <div id="service-tabs" role="group" aria-label="Service categories"></div>
+
+                <div id="service-panel">
+                    <p id="category-intro"></p>
+                    <div id="category-team"></div>
+                    <div id="service-cards"></div>
+                </div>
+            </section>
+
+
+
+            <!--Bundles Section-->
+
+            <section id="bundles">
+                <h2>Bundled Experiences</h2>
+                <p class="section-intro">Longer visits, gently priced. Each one is built around taking your time.</p>
+
+                <div id="bundle-grid"></div>
+            </section>
+
+
+
+            <!--About Section-->
+
+            <section id="about">
+                <h2>About the Space</h2>
+
+
+                <div id="about-intro">
+                    <img src="./images/space/reception.webp" alt="Bloom &amp; Co. reception area" id="about-photo" width="1200" height="675" loading="lazy"/>
+                    <div id="about-text">
+                        <p>Bloom &amp; Co. started with a question Anika kept asking herself after years behind the chair: why does an hour meant to be calming so often feel rushed instead? The more she thought about it, the more she realized she wanted to create a space that felt less like another stop in a busy day, and more like a small pause from it.</p>
+                        <p>She imagined a place with its own rhythm — warm, thoughtful, and quietly personal. Somewhere you could settle in without feeling like you had to perform, keep up, or become a different version of yourself. A place where beauty could feel personal rather than prescriptive, and care could be something you genuinely look forward to.</p>
+                        <p>That idea became Bloom &amp; Co. Not a place to reinvent you, but one to help you reconnect with what already feels like you. Come as you are. Take your time. Leave a little lighter.</p>
+                    </div>
+                    <p class="about-quote">You come in as you are. You leave a little more like yourself.</p>
+
+                </div>
+
+
+                <div id="about-gallery"></div>
+
+                <h3 id="team-heading">Meet the Team</h3>
+
+                <div id="team-grid"></div>
+            </section>
+
+
+            <!--FAQ Section-->
+
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div id="faq-list"></div>
+            </section>
+
+
+
+            <!--Booking Section-->
+
+            <section id="booking">
+                <h2>Book Your Visit</h2>
+                <p class="section-intro">A few short steps. Nothing is charged online. You pay at your appointment.</p>
+
+
+                <div id="booking-wizard">
+                    <ol id="booking-progress" aria-label="Booking progress"></ol>
+
+                    <form id="booking-form" novalidate>
+                        <div id="booking-step"></div>
+
+                        <p id="booking-error" role="alert"></p>
+
+                        <div id="booking-actions">
+                            <button type="button" id="booking-back" class="btn-secondary">Back</button>
+                            <button type="button" id="booking-next" class="btn-primary">Next</button>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+
+
+
+            <!--Visit section-->
+
+            <section id="visit">
+                <h2>Visit Us</h2>
+                <p class="section-intro">We're appointment-only, so please book first. Here's how to find us once you have.</p>
+
+
+                <div id="visit-grid">
+                    <div class="visit-panel">
+                        <h3>Opening hours</h3>
+                        <p id="visit-status" data-state="unknown" aria-live="polite">
+                            <span class="visit-status-dot"></span>
+                            <span id="visit-status-text">Checking hours...</span>
+                        </p>
+
+                        <ul id="visit-hours"></ul>
+                        <p class="visit-note">Longer visits need an earlier start, so the booking form only shows times that fit before we close.</p>
+                    </div>
+
+                    <div class="visit-panel">
+                        <h3>Find Us</h3>
+
+                        <address>
+                            Bloom &amp; Co. <br/>
+                            12 Lantern Lane <br/>
+                            Your Town, ST 000000
+                        </address>
+
+                        <p class="visit-contact">
+                            <a href="tel: +10000000000">(000) 000-0000</a><br/>
+                            <a href="mailto: hello@bloomandco.example">hello@bloomandco.example</a>
+                        </p>
+
+
+                        <div id="visit-map" role="img" aria-label="Map showing the location of Bloom &amp; Co.">
+                            Map goes here
+                        </div>
+
+                        <a href="#booking" class="btn-primary">Book a Session</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!--Footer section-->
+
+        <footer id="footer">
+            <div id="footer-inner">
+
+                <div class="footer-col">
+                    <img src="./images/bloom-and-co-vertical-logo.svg" alt="Bloom &amp; Co." class="footer-logo" />
+                </div>
+
+                <nav class="footer-col" aria-label="Footer">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#bundles">Bundles</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#visit">Visit</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col">
+                    <h4>Get in touch</h4>
+                    <p class="footer-contact">
+                        12 Lantern Lane <br/>
+                        <a href="tel:+10000000000">(000) 000-0000</a><br/>
+                        <a href="mailto:hello@bloomandco.example">hello@bloomandco.example</a>
+                    </p>
+
+                    <a href="#booking" class="btn-primary">Book a Session</a>
+                </div>
+            </div>
+
+            <p id="footer-bottom">
+                &copy; 2026 Bloom &amp; Co. Nothing is charged online. You pay at your appointment.<br/>
+                Designed and built by Ankita Das.
+            </p>
+        </footer> 
+
+
+        <!--Javascript files link-->
+
+        <script src="./js/services-data.js"></script>
+        <script src="./js/helpers.js"></script>
+        <script src="./js/nav.js"></script>
+        <script src="./js/faq.js"></script>
+        <script src="./js/about.js"></script>
+        <script src="./js/services.js"></script>
+        <script src="./js/bundles.js" charset="UTF-8"></script>
+        <script src="./js/booking/booking-state.js"></script>
+        <script src="./js/booking/step-choose.js" charset="UTF-8"></script>
+        <script src="./js/booking/step-datetime.js"></script>
+        <script src="./js/booking/step-details.js"></script>
+        <script src="./js/booking/booking-submit.js"></script>
+        <script src="./js/booking/booking.js" charset="UTF-8"></script>
+        <script src="./js/visit.js"></script>
+        
+    </body>
+</html>
